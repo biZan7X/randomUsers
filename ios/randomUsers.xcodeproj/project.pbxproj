@@ -41,6 +41,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = randomUsers/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81EEED49266BA7D6DECD1058 /* libPods-randomUsers-randomUsersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-randomUsers-randomUsersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC481FE86F1A1271BB00EF3 /* Pods-randomUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randomUsers.release.xcconfig"; path = "Target Support Files/Pods-randomUsers/Pods-randomUsers.release.xcconfig"; sourceTree = "<group>"; };
+		9F5A4FE526D68C38005C6E33 /* randomUsers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = randomUsers.entitlements; path = randomUsers/randomUsers.entitlements; sourceTree = "<group>"; };
 		ABA4B9805478AFE2A65218C7 /* Pods-randomUsers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randomUsers.debug.xcconfig"; path = "Target Support Files/Pods-randomUsers/Pods-randomUsers.debug.xcconfig"; sourceTree = "<group>"; };
 		DEDB786A90E0746388E32BCC /* Pods-randomUsers-randomUsersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randomUsers-randomUsersTests.release.xcconfig"; path = "Target Support Files/Pods-randomUsers-randomUsersTests/Pods-randomUsers-randomUsersTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -91,13 +92,13 @@
 				13FE80498D7E0215F2EA695A /* Pods-randomUsers-randomUsersTests.debug.xcconfig */,
 				DEDB786A90E0746388E32BCC /* Pods-randomUsers-randomUsersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* randomUsers */ = {
 			isa = PBXGroup;
 			children = (
+				9F5A4FE526D68C38005C6E33 /* randomUsers.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -484,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = randomUsers/randomUsers.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = randomUsers/Info.plist;
@@ -510,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = randomUsers/randomUsers.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = randomUsers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

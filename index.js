@@ -7,6 +7,7 @@ import {Provider} from 'react-redux';
 import {AppRegistry} from 'react-native';
 import {PersistGate} from 'redux-persist/integration/react';
 import PushNotification from 'react-native-push-notification';
+import PushNotificationIOS from '@react-native-community/push-notification-ios';
 
 import App from './src/App';
 import {name as appName} from './app.json';
@@ -20,13 +21,6 @@ PushNotification.configure({
 
   requestPermissions: Platform.OS === 'ios',
 });
-
-// const testNotification = () => {
-//   PushNotification.localNotification({
-//     title: 'My Notification Title', // (optional)
-//     message: 'My Notification Message', // (required)
-//   });
-// };
 
 const connectedApp = () => {
   return (
